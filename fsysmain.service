@@ -1,0 +1,9 @@
+[Unit]
+Description=fsysmain service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/forensics/fsysmain.py
+
+[Install]
+WantedBy=multi-user.target
