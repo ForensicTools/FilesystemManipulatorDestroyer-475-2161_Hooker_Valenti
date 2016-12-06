@@ -3,8 +3,8 @@ Windows Filesystem Manipulator & Destroyer
 
 
 **Authors:** Steven Valenti, Jacob Hooker
-**Version:** 1.0
-**Date:**    10.11.2016
+**Version:** 1.9
+**Date:**    12.05.2016
 
 
 ## Overview:
@@ -23,8 +23,17 @@ hashing functions and respond by removing sensitive material in preconfigured fi
 - fsysmain.py - ran as a service to perform actions on watched files and directories
 - fsysmain.service - systemd file for daemonizing on systemd enabled OS
 
+## Requires:
+
+- from fmdconf import load_config, update_config, cmd_branch
+- import subprocess
+- import psutil
+- import os
+
+## User guide
+
+
 ## TODO:
 
-- add file removing/shredding support for systemd devices
 - increase number of watched executables in windows
-- set a flag to differentiate between operating systems
+- write guide
